@@ -12,7 +12,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="none"
+
         >
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,14 +55,51 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="60dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/profile_03"
-                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profilePic"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/place_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    />
+
+                <!--           app:civ_border_width="2dp" -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/upload_icon"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/uplobtn"
+
+                        />
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
 
             <EditText
                 android:layout_width="match_parent"
@@ -66,11 +107,12 @@
                 android:hint="Username"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:inputType="text"
-                android:id="@+id/user"
+                android:id="@+id/userAc"
                 android:paddingLeft="20px"
                 android:paddingRight="20px"
-                android:maxLength="120"
+                android:maxLength="16"
+                android:inputType="textPersonName|textCapWords"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
                 android:lines="1"
                 android:textSize="15sp"
                 android:background="@drawable/label_border"
@@ -102,8 +144,26 @@
                 android:hint="Password"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:inputType="textEmailAddress"
-                android:id="@+id/Log_pass"
+                android:inputType="textPassword"
+                android:id="@+id/passAct"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:maxLength="120"
+                android:lines="1"
+                android:textSize="15sp"
+                android:background="@drawable/label_border"
+                android:textColor="@color/placeholder"
+                android:textColorHint="@color/placeholder"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:id="@+id/confirmPass"
                 android:paddingLeft="20px"
                 android:paddingRight="20px"
                 android:maxLength="120"
@@ -119,7 +179,7 @@
 
 
             <Button
-                android:id="@+id/logintnit"
+                android:id="@+id/signupbtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
@@ -163,7 +223,7 @@
                     >
 
                     <TextView
-                        android:id="@+id/SigPAth"
+                        android:id="@+id/UpPAth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Already have an account"

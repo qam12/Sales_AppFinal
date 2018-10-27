@@ -12,4 +12,12 @@
     <color name="keywords">#b0b9c2</color>
     <color name="transparent">#00d40909</color>
 
+
+    <!--graphgradient-->
+    <color name="gra1">#f2bf9d</color>
+    <color name="gra2">#eda08b</color>
+    <color name="gra3">#e97f78</color>
+    <color name="gra4">#e25956</color>
+
+
 </resources>

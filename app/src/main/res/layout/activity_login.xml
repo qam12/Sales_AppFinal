@@ -12,6 +12,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="none"
+
         >
 
 <LinearLayout
@@ -60,43 +62,61 @@
         app:srcCompat="@mipmap/profile_03"
         android:layout_centerHorizontal="true" />
 
-    <EditText
-        android:layout_marginTop="50px"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/MyEditText"
+
+            app:errorEnabled="true">
+
+            <EditText
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:id="@+id/Log_emaiId"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:maxLength="120"
+                android:lines="1"
+                android:textSize="15sp"
+                android:background="@drawable/label_border"
+                android:textColor="@color/placeholder"
+                android:textColorHint="@color/placeholder"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout2"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
-        android:id="@+id/Log_emaiId"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:paddingLeft="20px"
-        android:paddingRight="20px"
-        android:maxLength="120"
-        android:lines="1"
-        android:textSize="15sp"
-        android:background="@drawable/label_border"
-        android:textColor="@color/placeholder"
-        android:textColorHint="@color/placeholder"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyEditText"
+        app:errorEnabled="true">
+
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:id="@+id/Log_pass"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:maxLength="120"
+                android:lines="1"
+                android:textSize="15sp"
+                android:background="@drawable/label_border"
+                android:textColor="@color/placeholder"
+                android:textColorHint="@color/placeholder"
         />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="Password"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:inputType="textEmailAddress"
-        android:id="@+id/Log_pass"
-        android:paddingLeft="20px"
-        android:paddingRight="20px"
-        android:maxLength="120"
-        android:lines="1"
-        android:textSize="15sp"
-        android:background="@drawable/label_border"
-        android:textColor="@color/placeholder"
-        android:textColorHint="@color/placeholder"
-        />
-
+    </android.support.design.widget.TextInputLayout>
 
 
 

@@ -1,7 +1,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.qamberhaider.sales.Fragment.Noteboard">
 
     <!--<include layout="@layout/home_toolbar"  />-->
@@ -174,12 +176,35 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_marginTop="40dp"
-                    android:layout_gravity="center"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@mipmap/graph_time"
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+
+
+                <com.shinelw.library.ColorArcProgressBar
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/bar1"
+                    app:is_need_content="true"
+                    app:front_color1="@color/gra4"
+                    app:max_value="100"
+                    app:back_width="7dp"
+                    app:front_width="7dp"
+                    app:total_engle="270"
+                    app:is_need_unit="true"
+                    app:string_unit="Sales%"
+                    app:back_color="@color/bgwhite"
+                    android:layout_marginBottom="150dp"
+                    app:front_color2="@color/gra1"
+                    app:front_color3="@color/gra2"
                     />
 
             </LinearLayout>

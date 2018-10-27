@@ -13,12 +13,15 @@
             android:title="Profile"
             />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/_shops"
             android:title="Shops"
             />
         <item
-            android:id="@+id/nav_manage"
-            android:title="Chat" />
+            android:id="@+id/_orders"
+            android:title="Orders" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
     </group>
 
     <!--<item android:title="Communicate">-->

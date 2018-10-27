@@ -1,0 +1,278 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgwhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.qamberhaider.sales.Fragment.Shops">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView225"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop"
+                        android:textSize="25sp"
+                        android:textColor="@color/bgtitle"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_close_black_24dp"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyEditText"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:layout_marginTop="50px"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Shop Title"
+                    android:inputType="textPersonName|textCapWords"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"                    android:id="@+id/ShopTitle"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:maxLength="30"
+                    android:lines="1"
+                    android:textSize="15sp"
+                    android:background="@drawable/label_border"
+                    android:textColor="@color/placeholder"
+                    android:textColorHint="@color/placeholder"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyEditText"
+
+                app:errorEnabled="true">
+
+                <EditText
+                    android:layout_marginTop="50px"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Shop Location"
+                    android:inputType="textPostalAddress"
+                    android:id="@+id/shopLocation"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:maxLength="120"
+                    android:lines="1"
+                    android:textSize="15sp"
+                    android:background="@drawable/label_border"
+                    android:textColor="@color/placeholder"
+                    android:textColorHint="@color/placeholder"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layoutinovice"
+        android:layout_gravity="left"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyEditText"
+
+        app:errorEnabled="true">
+
+        <EditText
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Shop Code"
+            android:inputType="number"
+            android:id="@+id/shopCode"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:maxLength="5"
+            android:lines="1"
+            android:textSize="15sp"
+            android:background="@drawable/label_border"
+            android:textColor="@color/placeholder"
+            android:textColorHint="@color/placeholder"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/quauntity_ka"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:hintTextAppearance="@style/MyEditText"-->
+        <!--app:errorEnabled="true">-->
+
+        <!--<EditText-->
+            <!--android:layout_marginTop="50px"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:hint="Quauntity"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:id="@+id/quauntity"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:paddingLeft="20px"-->
+            <!--android:paddingRight="20px"-->
+            <!--android:maxLength="120"-->
+            <!--android:lines="1"-->
+            <!--android:textSize="15sp"-->
+            <!--android:background="@drawable/label_border"-->
+            <!--android:textColor="@color/placeholder"-->
+            <!--android:textColorHint="@color/placeholder"-->
+            <!--/>-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/text_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/text_locationIT"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/shopdetail_"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/button_03"
+                android:text="Shop Detail"
+                android:textColor="@color/bgwhite"
+                tools:ignore="OnClick" />
+
+
+            <Button
+                android:id="@+id/addshops"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/button_03"
+                android:text="Add Shop"
+                android:textColor="@color/bgwhite" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="20dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Forget your details?"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:gravity=""/>-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/listorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Orders"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

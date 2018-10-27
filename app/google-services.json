@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "173408952048",
+    "firebase_url": "https://sales-a7aef.firebaseio.com",
+    "project_id": "sales-a7aef",
+    "storage_bucket": "sales-a7aef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173408952048:android:2bb4909972551306",
+        "android_client_info": {
+          "package_name": "com.example.qamberhaider.sales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173408952048-m4palgk556uvpjsbclor24804lmffjbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qamberhaider.sales",
+            "certificate_hash": "9a4c34588ec17dda5446507dd0503cb61ffaa747"
+          }
+        },
+        {
+          "client_id": "173408952048-s1daj5aokt4l4u7u229f8pkaiphmvo1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyaUP-yImMduYl2hs1irBXZDnnGM3LSQQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173408952048-s1daj5aokt4l4u7u229f8pkaiphmvo1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

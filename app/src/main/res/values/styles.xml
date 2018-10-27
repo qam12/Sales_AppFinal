@@ -24,5 +24,18 @@
         <item name="android:background">#00ffdd00</item>
     </style>
 
+    <!--inputs-->
+
+    <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/placeholder</item>
+        <item name="colorControlActivated">@color/placeholder</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 
 </resources>
